@@ -47,7 +47,11 @@ const enterpriseSolutionCardData: IEnterpriseSolutionCardData[] = [
 
 const EnterpriseSolutionSection = () => {
   return (
-    <section className="bg-[#FFFFFF] border-2 border-[#E4E4E7] dark:bg-[#18181B] dark:border-[#27272A] shadow-lg shadow-gray-500 dark:shadow-gray-100/50 p-10 lg:p-[65px] rounded-[48px] flex gap-10 flex-col lg:flex-row lg:gap-5 justify-between items-center m-4 2xl:max-w-[1095px] 2xl:mx-auto">
+    <section
+      className="bg-[#FFFFFF] border-2 border-[#E4E4E7] dark:bg-[#18181B] dark:border-[#27272A] shadow-lg shadow-gray-500 dark:shadow-gray-100/50 p-10 lg:p-[65px] rounded-[48px] flex gap-10 flex-col lg:flex-row lg:gap-5 justify-between items-center m-4 2xl:max-w-[1095px] 2xl:mx-auto"
+      aria-labelledby="enterprise-solution-title"
+      aria-describedby="enterprise-solution-desc"
+    >
       <div className="flex flex-col items-start gap-5 flex-1">
         <div>
           <h4 className="font-bold text-3xl lg:text-5xl leading-12 tracking-[0.35px] text-[#09090B] dark:text-[#FAFAFA]">
@@ -63,7 +67,7 @@ const EnterpriseSolutionSection = () => {
             enterprise, our platform grows with your business needs.
           </p>
         </div>
-        <div>
+        <div aria-label="Enterprise features">
           {features.map((feature: IFeature, idx: number) => (
             <div key={idx} className="flex items-center gap-3 my-3">
               <div className="bg-linear-to-r from-[#83A7FF] to-[#8B5CF6] h-5 w-5 rounded-full flex items-center justify-center">
@@ -86,12 +90,17 @@ const EnterpriseSolutionSection = () => {
           <a
             className="inline-flex items-center justify-center bg-linear-to-r from-[#83A7FF] to-[#8B5CF6] w-[165px] h-14 rounded-2xl text-center"
             href="#"
+            aria-label="Contact sales about the enterprise-ready blockchain solution"
           >
             Contact Sales
           </a>
         </div>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 w-full gap-3 flex-1">
+      <div
+        className="grid grid-cols-1 sm:grid-cols-2 w-full gap-3 flex-1"
+        role="region"
+        aria-label="Enterprise statistics"
+      >
         {enterpriseSolutionCardData.map(
           ({ value, label, className }, index) => (
             <EnterpriseSolutionCard
