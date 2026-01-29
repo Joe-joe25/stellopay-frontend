@@ -4,6 +4,7 @@ import Footer from "@/components/common/footer";
 // import DashBoard from "@/components/dashboard/dashboard-page"
 import LandingPageNavBar from "@/components/landing/landing-page-nav-bar";
 import BenefitsSection from "@/components/landing/benefits";
+import FeaturesGrid from "@/components/landing/features-grid";
 
 export default function LandingPage() {
   return (
@@ -11,6 +12,7 @@ export default function LandingPage() {
       { <LandingPageNavBar /> }
        {/* Removed: <DashBoard /> - this shouldn't be on the landing page */}
       <Hero />
+      <FeaturesGrid />
       <KeyFeatures />
       <BenefitsSection />
       <Footer />
