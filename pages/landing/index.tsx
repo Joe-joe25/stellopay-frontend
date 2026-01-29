@@ -5,16 +5,18 @@ import Footer from "@/components/common/footer";
 import LandingPageNavBar from "@/components/landing/landing-page-nav-bar";
 import BenefitsSection from "@/components/landing/benefits";
 import ValuePropositions from "@/components/landing/value-propositions";
+import GetStartedCTA from "@/components/landing/get-started-cta";
 
 export default function LandingPage() {
   return (
     <div>
-      { <LandingPageNavBar /> }
-       {/* Removed: <DashBoard /> - this shouldn't be on the landing page */}
+      {<LandingPageNavBar />}
+      {/* Removed: <DashBoard /> - this shouldn't be on the landing page */}
       <Hero />
       <KeyFeatures />
       <ValuePropositions />
       <BenefitsSection />
+      <GetStartedCTA />
       <Footer />
     </div>
   );
