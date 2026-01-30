@@ -5,6 +5,11 @@ export interface FeatureCardProps {
   description: string;
 }
 
+export interface StatCardItem {
+  value: string;
+  label: string;
+}
+
 export const HeroContent = {
   titleOne: "Secure Digital Payments",
   titleTwo: "For a Smarter Future",
