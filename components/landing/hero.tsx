@@ -70,13 +70,13 @@ const hero = () => {
         {/* first container */}
         <div className='flex flex-col w-[90%] md:w-[70%] lg:max-w-176 lg:max-h-168.5 h-auto relative gap-5'>
           {/* Simplifying Crypto Payments for Business card */}
-          <div className='flex items-center justify-around rounded-full border-[0.74px] relative group border-[#e4e4e7] dark:border-[#27272A] w-78 h-7.5 px-1.5 bg-[#FFFFFF] dark:bg-[#18181B]'>
+          <a href="#" className='flex items-center justify-around rounded-full border-[0.74px] relative group border-[#e4e4e7] dark:border-[#27272A] w-78 h-7.5 px-1.5 bg-[#FFFFFF] dark:bg-[#18181B]'>
             <Sparkles className='text-[#09090B] dark:text-[#FAFAFA] w-[14.5px] h-[14.5px]' />
             <p className='font-medium text-xs'>
               Simplifying Crypto Payments for Business 
             </p>
           <ArrowRight className='text-[#52525B] dark:text-[#A1A1AA] w-[13.99px] h-[13.99px]'/>
-          </div>
+          </a>
           {/* header text */}
           <h1 className='font-bold text-4xl lg:text-7xl'>
               The Future of
@@ -184,7 +184,7 @@ const hero = () => {
             {/* third row */}
             <div className='flex justify-between items-center gap-3 text-[#52525B] dark:text-[#A1A1AA] font-bold text-xs w-full'>
 
-            <div className='rounded-[16px] border-[#e4e4e7] dark:border-[#27272A] border-[1.34px] p-4 w-full h-33.5 flex flex-col justify-between lg:border-2'>
+            <a href="#" className='rounded-[16px] border-[#e4e4e7] dark:border-[#27272A] border-[1.34px] p-4 w-full h-33.5 flex flex-col justify-between lg:border-2'>
               <div className='flex justify-between items-center w-full'>
                 <div className='bg-[#FFFFFF] dark:bg-[#18181B] w-10 h-10 rounded-[12px] flex justify-center items-center' style={{boxShadow: '0px 4px 20px 0px rgba(139, 92, 246, 0.25)'}}>
                   <img src={stellar.src} alt="" className='w-6 h-5'/>
@@ -199,9 +199,9 @@ const hero = () => {
               <p className='text-[#09090B] dark:text-[#FAFAFA] text-lg font-bold'>
                 $500k
               </p>
-            </div>
+            </a>
 
-            <div className='rounded-[16px] border-[#e4e4e7] dark:border-[#27272A] border-[1.34px] p-4 w-full h-33.5 flex flex-col justify-between lg:border-2'>
+            <a href="#" className='rounded-[16px] border-[#e4e4e7] dark:border-[#27272A] border-[1.34px] p-4 w-full h-33.5 flex flex-col justify-between lg:border-2'>
               <div className='flex justify-between items-center w-full'>
                 <div className='bg-[#FFFFFF] dark:bg-[#18181B] w-10 h-10 rounded-[12px] flex justify-center items-center' style={{boxShadow: '0px 4px 20px 0px rgba(139, 92, 246, 0.25)'}}>
                   <img src={skartnet.src} alt="" className='w-6 h-5'/>
@@ -216,7 +216,7 @@ const hero = () => {
               <p className='text-[#09090B] dark:text-[#FAFAFA] text-lg font-bold'>
                 $347.5k
               </p>
-            </div>
+            </a>
           </div>
           {/* fourth row */}
           <div className='flex justify-between items-center gap-3 text-[#52525B] dark:text-[#A1A1AA] font-bold text-xs w-full'>
