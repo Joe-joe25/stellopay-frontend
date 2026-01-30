@@ -16,10 +16,11 @@ const defaultStats = [
   { value: "99.9%", label: "Uptime" },
   { value: "<3s", label: "Transaction Speed" },
 ];
+import EnterpriseSolutionSection from "@/components/landing/enterprise-section";
 
 export default function LandingPage() {
   return (
-    <div>
+    <div className="bg-[#FFFFFF] dark:bg-[#09090B]">
       {<LandingPageNavBar />}
       {/* Removed: <DashBoard /> - this shouldn't be on the landing page */}
       <Hero />
@@ -31,6 +32,7 @@ export default function LandingPage() {
       </section>
       <KeyFeatures />
       <ValuePropositions />
+      <EnterpriseSolutionSection />
       <BenefitsSection />
       <GetStartedCTA />
       <Footer />
